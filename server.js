@@ -37,6 +37,7 @@ var start = function () {
             name: "Add Department",
             value: "add_department",
           },
+          { name: "Remove Department", value: "remove_department" },
         ],
       },
     ])
@@ -104,15 +105,11 @@ const addEmployee = () => {
         },
       ])
       .then(function (answers) {
-        db.query(
-          "INSERT INTO employees SET ?",
-        answers,
-          function (err, res) {
-            if (err) throw err;
-            console.table(res);
-            start();
-          }
-        );
+        db.query("INSERT INTO employees SET ?", answers, function (err, res) {
+          if (err) throw err;
+          console.table(res);
+          start();
+        });
       });
   });
 };
@@ -240,4 +237,4 @@ function addDepartment() {
       );
     });
 }
-start()
+start();
