@@ -5,7 +5,7 @@
 * Usage
 * History
 * Credits
-* License
+
 # Installation
  download all the files
  Using your command line, open the file.
