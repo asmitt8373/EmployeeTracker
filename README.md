@@ -18,4 +18,4 @@ As a business owner I want to be able to view and manage the departments, roles,
 # History
 ## https://github.com/asmitt8373/EmployeeTracker
 # Credits
-## id like to thank my tutor and the ta's for there help
+id like to thank my tutor and the ta's for there help
